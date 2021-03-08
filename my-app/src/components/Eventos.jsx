@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 const Eventos = () => {
     const eventoClick =  () => {
@@ -6,12 +6,11 @@ const Eventos = () => {
     }
     
     return (
-        <div>
+        <Fragment>
             <hr/>
             <h2>Eventos</h2>
             <button onClick={ () => eventoClick() } >Click</button>
-
-        </div>
+        </Fragment>
     )
 }
 
