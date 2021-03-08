@@ -11,15 +11,23 @@ const Listas = () => {
     ]
 
     const [lista, setlista] = useState(initialState)
+    
+    const agregarElemento = () => {
+        setlista([ 
+            ...lista,
+            { id: 5, texto: "Tarea " + (lista.length + 1) }
+        ])
+    }
 
     return (
         <div>
             <h2>Listas</h2>
             {
                 lista.map((item, index) => (
-                    <h4 key={ item.id }>{ item.texto }</h4>
+                    <h4 key={ index }>{ item.texto }</h4>
                 ))
             }
+            <button onClick={() => agregarElemento()} >Agregar</button>
         </div>
     )
 }
