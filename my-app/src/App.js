@@ -1,5 +1,5 @@
 import React from 'react'
-import Formulario from './components/Formulario'
+import Formulario2 from './components/Formulario2'
 //import Listas from './components/Listas'
 // import Contador from './components/Contador'
 // import Eventos from './components/Eventos'
@@ -15,7 +15,7 @@ function App() {
       <Eventos/>
       <Contador/> 
       <Listas/>*/}
-      <Formulario/>
+      <Formulario2/>
     </div>
   );
 }
