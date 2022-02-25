@@ -39,7 +39,7 @@ const Formulario2 = () => {
     return (
         <div>
             <div>
-                <h2>Formulario</h2>
+                <h2>Formulario2</h2>
                 <form onSubmit={guardarDatos}>
                     <input
                         type="text"
